@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tasks</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Task Manager</h1>
+    </header>
+    <main class="container">
+        <section>
+            <h2>Create a Task</h2>
+            <form id="taskForm" class="task-input">
+                <label for="title">Task Name</label>
+                <input type="text" id="title" required><br>
+
+                <label for="description">Description</label>
+                <textarea id="description"></textarea><br>
+
+                <label for="deadline">Deadline</label>
+                <input type="date" id="deadline"><br>
+
+                <label for="priority">Priority</label>
+                <select id="priority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select><br>
+
+                <button type="submit">Create Task</button>
+            </form>
+            <p><a href="./task-list.html">View All Tasks</a></p>
+            <p>Go to <a href="./login.html">Login</a></p>
+            
+        </section>
+    </main>
+
+    <footer class="foot">
+        <small>&copy; 2024 TaskMaster. All Rights Reserved.</small>
+    </footer>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

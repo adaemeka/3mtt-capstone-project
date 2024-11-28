@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 
-body{
+body, html {
     text-align: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    overflow: auto;
 }
 header{
     border: 2px solid gray;
@@ -14,14 +16,17 @@ header{
     line-height: 45px;
     background-color: antiquewhite;
     margin-bottom: 40px;
+    padding-bottom: 20px;
+    padding-top: 10px;
 }
 .container{
     max-width: 600px;
-    /* border: 1px solid gray;*/
+    /*border: 1px solid gray;*/
     margin: auto 400px;
+    margin-bottom: 80px;
     font-size: 20px;
     width: 100%;
-    text-align: left;
+    text-align: center;
 }
 a{
     text-decoration: none;
@@ -31,12 +36,24 @@ a:hover{
     color: blue;
     text-decoration: underline;
 }
+.task-input{
+    margin-bottom: 10px;
+}
+
+.task-input input, .task-input select, .task-input textarea{
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    /*border: 1px solid #ddd;
+    border-radius: 4px;*/
+}
 button{
     background-color: rgb(131, 183, 218);
     padding: 4px 10px;
     margin-top: 10px;
     border-radius: 5px;
 }
+
 .foot{
     border: 1px solid black;
     background-color: rgb(41, 39, 39);
